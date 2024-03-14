@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASA</title>
+    <link rel="stylesheet" href="style-scss.css">
+    <style>
+        main{
+            height:100vh;
+            background:antiquewhite;
+        }
+        .highwway-wrapper{
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        }
+        ul.inner-menu{
+            list-style: none;
+            padding:0;
+            padding-left:10px;
+        }
+        li.inner-menu{
+            margin-bottom:20px;
+        }
+        a{
+            font-size:18px;
+            color:black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="navbar-links">
+                <ul>
+                    <li><a data-highway-enabled href="./casa.html">Casa</a></li>
+                    <li><a data-highway-enabled href="./scuola.html">Scuola</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main data-router-wrapper>
+        <div data-router-view class="highwway-wrapper">
+            <section data-router-view="page2">
+                <div class="content">
+                    <h1>CASA</h1>
+                    <ul class="inner-menu">
+                        <li class="inner-menu"><a href="index.html">Home</a></li>
+                        <li class="inner-menu"><a href="scuola.html">Scuola</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        </div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,202 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  --header-height:60px;
+}
+
+header {
+  position: fixed;
+  z-index: 9999;
+  background: green;
+  width: 100%;
+  height: var(--header-height);
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 25px;
+  height: 100%;
+}
+header nav .navbar-links ul {
+  list-style: none;
+}
+header nav .navbar-links ul li {
+  display: inline-block;
+  margin-left: 0.75rem;
+}
+header nav .navbar-links ul li a,
+header nav .navbar-links ul li a:active {
+  color: white;
+}
+
+#HighwayContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.highwway-wrapper.moving {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#PinContainer {
+  height: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+}
+#SliderContainer {
+  width: 400%;
+  height: 100%;
+  background: url("./assets/media/1-background.svg") center/cover no-repeat;
+}
+
+#Second {
+  background: url("./assets/media/2-scena.svg") center/cover no-repeat;
+}
+
+.slide {
+  position: relative;
+  width: 25%;
+  margin-top: var(--header-height);
+  height: calc(100% - var(--header-height));
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.slide-inner-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 0 25px;
+  z-index: 1;
+}
+.slide-inner-wrapper .slide-text {
+  position: relative;
+  flex: 1;
+}
+.slide-inner-wrapper .slide-text p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.662745098);
+}
+.slide-inner-wrapper .slide-img {
+  position: relative;
+  flex: 1;
+}
+.slide-inner-wrapper .slide-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.slide-inner-wrapper .content-text {
+  width: 35%;
+}
+.slide-inner-wrapper .content-img {
+  width: 35%;
+}
+.slide-inner-wrapper .content-img img {
+  width: 100%;
+}
+.slide-inner-wrapper .separator {
+  position: absolute;
+  height: 100%;
+  background: transparent;
+}
+.slide-inner-wrapper .separator img {
+  height: 100%;
+  width: auto;
+}
+
+#ParallaxOne,
+#ParallaxTwo,
+#ParallaxThree,
+#ParallaxFour {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+}
+#ParallaxOne .layer:not(.separator),
+#ParallaxTwo .layer:not(.separator),
+#ParallaxThree .layer:not(.separator),
+#ParallaxFour .layer:not(.separator) {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+#sun {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  z-index: 2;
+}
+#sun img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.hotspot {
+  position: absolute;
+  z-index: 3;
+}
+.hotspot a {
+  text-decoration: none;
+  display: block;
+  background: yellow;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+}
+.hotspot#HotSpotCasa {
+  top: 25%;
+  left: -15%;
+}
+.hotspot#HotSpotCasa1 {
+  top: 55%;
+  left: 30%;
+}
+.hotspot#HotSpotScuola {
+  top: 50%;
+  left: 35%;
+}
+.hotspot#HotSpotScuola2 {
+  top: 35%;
+  left: 75%;
+}
+.hotspot#HotSpotClasse {
+  top: 41%;
+  left: 40%;
+}
+.hotspot#HotSpotMensa {
+  top: 41%;
+  left: 40%;
+}
