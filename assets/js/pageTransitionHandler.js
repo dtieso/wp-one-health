@@ -8,14 +8,6 @@ export function pageTransitionInit(){
             // use Highway only on with enabled triggers
             const highwayEnabled = trigger.getAttribute('data-highway-enabled');
             if (!highwayEnabled || highwayEnabled !== 'true') window.location.href = url;
-            const {scroll} = window.w;
-            // Remove the scene for horizontal scroll to allowed vertical animation
-            const {scene : horizontalScene} = scroll.getScene("mainHorizontalScene");
-            horizontalScene.enabled(false);
-            // Remove the scenes for parallax to keep parallax elements in position while vertical scrolling
-            const parallaxScenes = scroll.getScene("parallax");
-            
-            parallaxScenes.map(({scene}) => scene.enabled(false))
             
             const animationDuration = 1.5 // Duration of scroll in sec
             const easeFunction = 'linear'
@@ -42,9 +34,7 @@ export function pageTransitionInit(){
                     `-=${animationDuration}`
                 )
                 .eventCallback("onComplete",()=>{
-                    // Re enabled the scenes
-                    horizontalScene.enabled(true);
-                    parallaxScenes.map(({scene}) => scene.enabled(true))
+                    
                     // Remove animations classes
                     pinContainer.classList.remove('moving');
                     to.classList.remove('moving');

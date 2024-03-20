@@ -81,56 +81,17 @@ export function initScroll(){
     }
 
     const scroll = new ScrollAnimations();
-    window.w.scroll = scroll;
-        
-    // const bgTween = new TimelineMax()
-    //     .to("#PinContainer #BackgroundContainer",1,{left: "-400%", ease: Linear.easeNone} )
+    window.w.scroll = scroll;    
 
-    // const scene = new ScrollMagic.Scene(
-    //     { triggerElement: "#PinContainer", duration: 200, offset: 450 })
-    //     .setTween(bgTween)
-    //     .setPin("#PinContainer")
-    //     .addIndicators()
-    //     .addTo(scroll.getController());
-    // // Tweens definitions
-    // const bgTween = new TimelineMax()
-    //     .to("#SliderContainer", 1, {x: "-25%"})
-  	// 	.to("#SliderContainer", 1, {x: "-50%"})
-  	// 	.to("#SliderContainer", 1, {x: "-75%"})      
+    const pinContainer = window.document.getElementById("PinContainer");
+    const highwayContainer = window.document.getElementById("HighwayContainer");
+    const bg = window.document.querySelector("#TopContainer object");
     
-    // const sceneTween = new TimelineMax()
-    //     .to("#ScenesContainer", 1, {x: "-25%"})
-  	// 	.to("#ScenesContainer", 1, {x: "-50%"})
-  	// 	.to("#ScenesContainer", 1, {x: "-75%"})      
     
-    // const topTween = new TimelineMax()
-    //     .to("#TopContainer", 1, {x: "-25%"})
-  	// 	.to("#TopContainer", 1, {x: "-50%"})
-  	// 	.to("#TopContainer", 1, {x: "-75%"})      
+    highwayContainer?.addEventListener('scroll', function (e) {
+        console.log('scroll')
+        e.preventDefault();
+    })
 
-
-
-    // // Main Horizontal Tween and Scene
-    // scroll.setTween(bgTween,"bgTween","#SliderContainer");
-    // scroll.createScene({
-    //     triggerElement:"#PinContainer",
-    //     triggerHook:0,
-    //     duration:"400%"
-    // },"#PinContainer",bgTween,"mainHorizontalScene")
-    
-    // scroll.setTween(bgTween,"scenesTween","#ScenesContainer");
-    // scroll.createScene({
-    //     triggerElement:"#PinContainer",
-    //     triggerHook:0,
-    //     duration:"400%"
-    // },"#PinContainer",bgTween,"scenesTween")
-    
-    // scroll.setTween(bgTween,"topTween","#TopContainer");
-    // scroll.createScene({
-    //     triggerElement:"#PinContainer",
-    //     triggerHook:0,
-    //     duration:"400%"
-    // },"#PinContainer",bgTween,"topTween")
-    
     
 }
