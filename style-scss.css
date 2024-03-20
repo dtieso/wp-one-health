@@ -9,7 +9,7 @@ body, html {
 header {
   position: fixed;
   z-index: 9999;
-  background: green;
+  background: white;
   width: 100%;
   height: var(--header-height);
 }
@@ -69,31 +69,40 @@ header nav .navbar-links ul li a:active {
   left:0;
   height: calc(100vh - var(--header-height));
 }
+
 /* Scale for translateZ */
 /* 1 + (translateZ * -1) / perspective */
 #BackgroundContainer{
   display:flex;
   width: 100%;
-  transform: translateZ(-2px) scale(3);
+  transform: translateZ(-0.08px) scale(1.08);
 }
+
 #ScenesContainer{
   display:flex;
   width: 100%;
-  transform: translateZ(0) ;
+  transform: translateZ(0) scale(1);
 }
+
 #TopContainer{
   display:flex;
   width: 100%;
-  transform: translateZ(0) ;
+  transform: translateZ(0.08px) scale(0.92);
 }
 
-.hotspot .scene1-0{
-  bottom:35%;
-  left:45%;
+.hotspot{
+  position:absolute;
+  left:0;
+  bottom:0;
+  height: 100vh;
 }
 .hotspot a{
   position:absolute;
 }
 .hotspot a:hover{
   background:red;
+}
+.hotspot .scene1-0{
+  bottom:35%;
+  left:6%;
 }
