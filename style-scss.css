@@ -143,28 +143,36 @@ header nav .navbar-links ul li a:active {
   left:3%;
 }
 .hotspot .scene1-0 img{
-  width: 80%;
+  /* width: 80%; */
+  width: auto;
+  height: 25vh;
 }
 .hotspot .scene2-0{
   bottom:18%;
   left:14.5%;
 }
 .hotspot .scene2-0 img{
-  width: 80%;
+  /* width: 80%; */
+  width: auto;
+  height: 39vh;
 }
 .hotspot .scene2-1{
   bottom:17.5%;
   left:16%;
 }
 .hotspot .scene2-1 img{
-  width: 80%;
+  /* width: 80%; */
+  width: auto;
+  height: 24vh;
 }
 .hotspot .scene2-2{
   bottom:19%;
   left:19.1%;
 }
 .hotspot .scene2-2 img{
-  width: 80%;
+  /* width: 80%; */
+  width: auto;
+  height: 13vh;
 }
 .hotspot .scene3-0{
   bottom:42%;
@@ -183,21 +191,27 @@ header nav .navbar-links ul li a:active {
   left:33%;
 }
 .hotspot .scene3-3 img{
-  width: 80%;
+  /* width: 80%; */
+  width: auto;
+  height: 66vh;
 }
 .hotspot .scene4-0{
   bottom:15%;
   left:41.7%;
 }
 .hotspot .scene4-0 img{
-  width: 70%;
+  /* width: 70%; */
+  width: auto;
+  height: 34vh;
 }
 .hotspot .scene4-1{
   bottom:11%;
   left:44%;
 }
 .hotspot .scene4-1 img{
-  width: 75%;
+  /* width: 75%; */
+  width: auto;
+  height: 49vh;
 }
 .hotspot .scene4-2{
   bottom:45%;
@@ -208,21 +222,27 @@ header nav .navbar-links ul li a:active {
   left:45.1%;
 }
 .hotspot .scene4-3 img{
-  width: 70%;
+  /* width: 70%; */
+  width: auto;
+  height: 8vh;
 }
 .hotspot .scene4-4{
   bottom:11%;
   left:45.2%;
 }
 .hotspot .scene4-4 img{
-  width: 80%;
+  /* width: 80%; */
+  width: auto;
+  height: 9vh;
 }
 .hotspot .scene4-5{
   bottom:14.8%;
   left:46.2%;
 }
 .hotspot .scene4-5 img{
-  width: 70%;
+  /* width: 70%; */
+  width: auto;
+  height: 34vh;
 }
 .hotspot .scene5-0{
   bottom:37%;
@@ -253,7 +273,9 @@ header nav .navbar-links ul li a:active {
   left:66.2%;
 }
 .hotspot .scene6-0 img{
-  width: 73%;
+  /* width: 73%; */
+  width: auto;
+  height: 52vh;
 }
 .hotspot .scene6-1{
   bottom:8%;
@@ -264,14 +286,18 @@ header nav .navbar-links ul li a:active {
   left:68.3%;
 }
 .hotspot .scene6-2 img{
-  width: 75%;
+  /* width: 75%; */
+  width: auto;
+  height: 46vh;
 }
 .hotspot .scene6-3{
   bottom:14.5%;
   left:69.9%;
 }
 .hotspot .scene6-3 img{
-  width: 73%;
+  /* width: 73%; */
+  width: auto;
+  height: 34vh;
 }
 .hotspot .scene6-4{
   bottom:7.3%;
@@ -286,33 +312,43 @@ header nav .navbar-links ul li a:active {
   left:71.2%;
 }
 .hotspot .scene6-6 img{
-  width: 75%;
+  /* width: 75%; */
+  width: auto;
+  height: 49vh;
 }
 .hotspot .scene7-0{
   bottom:3%;
   left:77%;
 }
 .hotspot .scene7-0 img{
-  width: 70%;
+  /* width: 70%; */
+  width: auto;
+  height: 46vh;
 }
 .hotspot .scene7-1{
   bottom:15%;
   left:78.8%;
 }
 .hotspot .scene7-1 img{
-  width: 70%;
+  /* width: 70%; */
+  width: auto;
+  height: 41vh;
 }
 .hotspot .scene7-2{
   bottom:38.38%;
   left:81.3%;
 }
 .hotspot .scene7-2 img{
-  width: 70%;
+  /* width: 70%; */
+  width: auto;
+  height: 12vh;
 }
 .hotspot .scene8-0{
   bottom:10%;
   left:91.5%;
 }
 .hotspot .scene8-0 img{
-  width: 75%;
+  /* width: 75%; */
+  width: auto;
+  height: 50vh;
 }

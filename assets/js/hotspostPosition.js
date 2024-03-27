@@ -89,11 +89,11 @@ export function hotspotPosition() {
             const topPositionPercentage = parseFloat(top.style.left);
             const delta = topPositionPercentage - scrollPercent;
             if (topPositionPercentage - 2 < scrollPercent) {
-                console.log('top', top);
-                console.log('tpp',topPositionPercentage)
-                console.log('sp',scrollPercent)
-                console.log('tpp-sp', topPositionPercentage - scrollPercent)
-                top.style.left = topPositionPercentage - scrollPercent/ delta * parallaxFactor + "%";
+                // console.log('top', top);
+                // console.log('tpp',topPositionPercentage)
+                // console.log('sp',scrollPercent)
+                // console.log('tpp-sp', topPositionPercentage - scrollPercent)
+                // top.style.left = topPositionPercentage - scrollPercent/ delta * parallaxFactor + "%";
             }
             
         })
