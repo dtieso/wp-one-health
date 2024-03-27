@@ -84,12 +84,45 @@ header nav .navbar-links ul li a:active {
   transform: translateZ(0) scale(1);
 }
 
-#TopContainer{
+/* #TopContainer{
   display:flex;
   width: 100%;
   transform: translateZ(0.08px) scale(0.92);
+} */
+#TopContainer .top{
+  height: 100%;
+  position:absolute;
+  z-index: 9;
 }
-
+/* #TopContainer .top-1{
+  left:10.5%;
+}
+#TopContainer .top-2{
+  left:21.5%;
+}
+#TopContainer .top-3{
+  left:37%;
+}
+#TopContainer .top-4{
+  left:49.5%;
+}
+#TopContainer .top-5{
+  left:62%;
+} */
+#TopContainer .top-6{
+  height: 50%;
+  bottom:0;
+}
+/* #TopContainer .top-7{
+  left:85.5%;
+}
+#TopContainer .top-8{
+  left:98%;
+} */
+#HotSpotContainer{
+  opacity:0;
+  transition:opacity 0.3s linear;
+}
 .hotspot{
   position:absolute;
   left:0;
@@ -98,11 +131,188 @@ header nav .navbar-links ul li a:active {
 }
 .hotspot a{
   position:absolute;
+  transform: scale(1);
+  transition:all 0.3s ease-in-out;
 }
 .hotspot a:hover{
-  background:red;
+  transform: scale(1.1);
+  transition:all 0.3s ease-in-out;
 }
 .hotspot .scene1-0{
-  bottom:35%;
-  left:6%;
+  bottom:3%;
+  left:3%;
+}
+.hotspot .scene1-0 img{
+  width: 80%;
+}
+.hotspot .scene2-0{
+  bottom:18%;
+  left:14.5%;
+}
+.hotspot .scene2-0 img{
+  width: 80%;
+}
+.hotspot .scene2-1{
+  bottom:17.5%;
+  left:16%;
+}
+.hotspot .scene2-1 img{
+  width: 80%;
+}
+.hotspot .scene2-2{
+  bottom:19%;
+  left:19.1%;
+}
+.hotspot .scene2-2 img{
+  width: 80%;
+}
+.hotspot .scene3-0{
+  bottom:42%;
+  left:29.4%;
+}
+.hotspot .scene3-1{
+  bottom:29%;
+  left:29.95%;
+}
+.hotspot .scene3-2{
+  bottom:59%;
+  left:30%;
+}
+.hotspot .scene3-3{
+  bottom:0%;
+  left:33%;
+}
+.hotspot .scene3-3 img{
+  width: 80%;
+}
+.hotspot .scene4-0{
+  bottom:15%;
+  left:41.7%;
+}
+.hotspot .scene4-0 img{
+  width: 70%;
+}
+.hotspot .scene4-1{
+  bottom:11%;
+  left:44%;
+}
+.hotspot .scene4-1 img{
+  width: 75%;
+}
+.hotspot .scene4-2{
+  bottom:45%;
+  left:45%;
+}
+.hotspot .scene4-3{
+  bottom:34.5%;
+  left:45.1%;
+}
+.hotspot .scene4-3 img{
+  width: 70%;
+}
+.hotspot .scene4-4{
+  bottom:11%;
+  left:45.2%;
+}
+.hotspot .scene4-4 img{
+  width: 80%;
+}
+.hotspot .scene4-5{
+  bottom:14.8%;
+  left:46.2%;
+}
+.hotspot .scene4-5 img{
+  width: 70%;
+}
+.hotspot .scene5-0{
+  bottom:37%;
+  left:54.6%; 
+}
+.hotspot .scene5-1{
+  bottom:61%;
+  left:57.8%;
+}
+.hotspot .scene5-2{
+  bottom:36.8%;
+  left:56%;
+}
+.hotspot .scene5-3{
+  bottom:62%;
+  left:56%;
+}
+.hotspot .scene5-4{
+  bottom:61%;
+  left:54%;
+}
+.hotspot .scene5-5{
+  bottom:50%;
+  left:59.2%;
+}
+.hotspot .scene6-0{
+  bottom:13.6%;
+  left:66.2%;
+}
+.hotspot .scene6-0 img{
+  width: 73%;
+}
+.hotspot .scene6-1{
+  bottom:8%;
+  left:66%;
+}
+.hotspot .scene6-2{
+  bottom:11%;
+  left:68.3%;
+}
+.hotspot .scene6-2 img{
+  width: 75%;
+}
+.hotspot .scene6-3{
+  bottom:14.5%;
+  left:69.9%;
+}
+.hotspot .scene6-3 img{
+  width: 73%;
+}
+.hotspot .scene6-4{
+  bottom:7.3%;
+  left:70.3%;
+}
+.hotspot .scene6-5{
+  bottom:7.3%;
+  left:70.7%;
+}
+.hotspot .scene6-6{
+  bottom:10%;
+  left:71.2%;
+}
+.hotspot .scene6-6 img{
+  width: 75%;
+}
+.hotspot .scene7-0{
+  bottom:3%;
+  left:77%;
+}
+.hotspot .scene7-0 img{
+  width: 70%;
+}
+.hotspot .scene7-1{
+  bottom:15%;
+  left:78.8%;
+}
+.hotspot .scene7-1 img{
+  width: 70%;
+}
+.hotspot .scene7-2{
+  bottom:38.38%;
+  left:81.3%;
+}
+.hotspot .scene7-2 img{
+  width: 70%;
+}
+.hotspot .scene8-0{
+  bottom:10%;
+  left:91.5%;
+}
+.hotspot .scene8-0 img{
+  width: 75%;
 }
