@@ -1,11 +1,13 @@
 export function hotspotPosition() {
     const USED_WIDTH_FOR_POSITIONING = 11679;
     const USED_HEIGHT_FOR_POSITIONING = 764;
+    const USED_VIEPORTHEIGHT_FOR_POSITIONING = 824;
 
     const panoramaContainer = window.document.getElementById('PinContainer');
     const bgTop = window.document.getElementById('TopContainer');
     const bgScene = window.document.querySelector('#ScenesContainer .svg-scroll');
     const tops = window.document.querySelectorAll('.top');
+    
 
     const hotspotContainer = window.document.getElementById('HotSpotContainer');
 
@@ -17,8 +19,20 @@ export function hotspotPosition() {
     hotspotContainer.style.width = bgWidth + "px";
     hotspotContainer.style.opacity = "1";
     
-    console.log('🚀 ~ hotspotPosition ~ bgWidth2:', bgWidth);
+    // console.log('🚀 ~ hotspotPosition ~ bgWidth2:', bgWidth);
     console.log('🚀 ~ hotspotPosition ~ bgHeight:', bgHeight);
+    // console.log('screen ratio',bgWidth / bgHeight)
+    const hotspots = hotspotContainer.querySelectorAll('.js-hotpost');
+    
+    hotspots.forEach(hotspot => {
+        const oldTop = parseFloat(hotspot.style.top.replace(/[^0-9.-]/g, ''));
+            console.log('🚀 ~ hotspotPosition ~ window.clientWidth:', window.clientWidth);
+        if (window.innerWidth <= 768) {
+            console.log('here');
+            hotspot.style.top = (oldTop / (USED_HEIGHT_FOR_POSITIONING)) * bgHeight + "%";
+        }
+
+    })
 
     const throttle = (funct, limit) => {
         let lastFunc;

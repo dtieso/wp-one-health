@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style-scss.css">
+    <style>
+    #mouseTracker {
+        position: absolute;
+        background-color: #f0f0f0;
+        padding: 5px;
+        border: 1px solid #ccc;
+        font-family: Arial, sans-serif;
+        font-size: 12px;
+        pointer-events: none; /* Per evitare che l'elemento interferisca con gli eventi del mouse */
+    }
+</style>
 </head>
 <body>
     <header>
@@ -21,6 +32,7 @@
         </nav>
     </header>
     <main data-router-wrapper>
+        
         <div data-router-view id="HighwayContainer">
             <div class="panorama-container" id="PinContainer">
                 <div class="layer layer-bg" id="BackgroundContainer">
@@ -44,103 +56,104 @@
                     <object style="left:98%" class="svg-scroll top-8 top" data="./assets/media/top-8.svg"> </object>
                 </div>
                 <div class="hotspot" id="HotSpotContainer">
-                    <a class="scene1-0" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:69%;left:3%;" class="js-hotpost scene1-0" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/restiamo-attive.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene2-0" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:35%;left:14.5%;" class="js-hotpost scene2-0" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/gruppi-di-cammino.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene2-1" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:52%;left:16%;" class="js-hotpost scene2-1" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/pedibus.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene2-2" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:62%;left:19.1%;" class="js-hotpost scene2-2" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/move-it.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene3-0" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:37%;left:29.4%;" class="js-hotpost scene3-0" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/vaccinazioni.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene3-1" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:48%;left:29.95%;" class="js-hotpost scene3-1" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/tossinfezioni-origine-alimentare.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene3-2" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:10%;left:30%;" class="js-hotpost scene3-2" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/misurazione-qualita-aria.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene3-3" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:26%;left:33%;" class="js-hotpost scene3-3" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/sirvess-rete-scuole-sicurezza.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene4-0" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:44%;left:41.7%;" class="js-hotpost scene4-0" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/peer-education.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene4-1" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:34%;left:44%;" class="js-hotpost scene4-1" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/prevenzione-stress-lavoro-scuole.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene4-2" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:35%;left:45%;" class="js-hotpost scene4-2" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/smoke-free-competition.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene4-3" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:51.6%;left:45.1%;" class="js-hotpost scene4-3" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/rete-senza-fili.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene4-4" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:78%;left:45.2%;" class="js-hotpost scene4-4" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/scuola-in-movimento.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene4-5" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:44%;left:46.2%;" class="js-hotpost scene4-5" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/diario-della-salute.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene5-0" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:32.7%;left:54.6%;" class="js-hotpost scene5-0" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/controlli-in-allevamento.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene5-1" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:5.5%;left:53.8%;" class="js-hotpost scene5-1" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/diete-speciali.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene5-2" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:27.8%;left:56%;" class="js-hotpost scene5-2" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/ispezioni-controlli-ufficiali.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene5-3" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:12%;left:55.7%;" class="js-hotpost scene5-3" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/portale-ricettario.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene5-4" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:6%;left:57.7%;" class="js-hotpost scene5-4" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/linee-guida-qualita-nutrizionale.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene5-5" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:37.7%;left:59.2%;" class="js-hotpost scene5-5" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/formazione-celiachia.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene6-0" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:25.7%;left:66.2%;" class="js-hotpost scene6-0" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/orto-in-condotta.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene6-1" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:71%;left:66%;" class="js-hotpost scene6-1" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/prodotti-fitosanitari.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene6-2" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:37%;left:68.3%;" class="js-hotpost scene6-2" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/merenda-sana.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene6-3" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:44.6%;left:69.9%;" class="js-hotpost scene6-3" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/campionamenti-acqua.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene6-4" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:76%;left:70.3%;" class="js-hotpost scene6-4" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/prevenzione-zanzare-zecche.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene6-5" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:73%;left:70.7%;" class="js-hotpost scene6-5" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/prevenzione-malattie-infettive.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene6-6" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:32%;left:71.2%;" class="js-hotpost scene6-6" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/1km-giorno-educational.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene7-0" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:40%;left:77%;" class="js-hotpost scene7-0" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/animali-affezione.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene7-1" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:37%;left:78.8%;" class="js-hotpost scene7-1" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/ridatti-una-mossa.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene7-2" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:43%;left:81.3%;" class="js-hotpost scene7-2" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/impatto-ambientale.svg" alt="HOTSPOT1">
                     </a>
-                    <a class="scene8-0" data-highway-enabled="true" href="./casa.html" type="button">
+                    <a style="top:33%;left:91.5%;" class="js-hotpost scene8-0" data-highway-enabled="true" href="./casa.html" type="button">
                         <img src="/assets/media/chars/ambulatorio-viaggiatori-internazionali.svg" alt="HOTSPOT1">
-                    </a>
+                    </a> 
                 </div>
             </div>
         </div>
     </main>
+    <div id="mouseTracker">Coordinate: <span id="coordinates">0, 0</span></div>
     <!-- dependecies -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
@@ -149,5 +162,19 @@
     <script src="assets/vendor/highway.min.js"></script>
     <!-- custom js -->
     <script type="module" src="assets/js/customScript.js"></script>
+    <script>
+    var tracker = document.getElementById('mouseTracker');
+    var coordinatesSpan = document.getElementById('coordinates');
+    const svgRect = window.document.getElementById('ScenesContainer').getBoundingClientRect()
+    // Aggiungi un gestore per l'evento mousemove al documento
+    document.addEventListener('mousemove', function(e) {
+        // Aggiorna le coordinate della label con quelle del mouse
+        var x = e.clientX - svgRect.left;
+        var y = e.clientY - svgRect.top;
+        tracker.style.left = (x + 10) + 'px'; // Aggiunge 10px per spostare la label leggermente a destra dal puntatore del mouse
+        tracker.style.top = (y + 10) + 'px'; // Aggiunge 10px per spostare la label leggermente sotto il puntatore del mouse
+        coordinatesSpan.textContent = x + ', ' + y;
+    });
+</script>
 </body>
 </html>

@@ -4,6 +4,7 @@ body, html {
   width: 100%;
   height: 100%;
   --header-height:60px;
+  --scroll-bar-height:15px;
 }
 
 header {
@@ -67,7 +68,7 @@ header nav .navbar-links ul li a:active {
   right:0;
   bottom:0;
   left:0;
-  height: calc(100vh - var(--header-height));
+  height: calc(100vh - var(--header-height) - var(--scroll-bar-height));
 }
 
 /* Scale for translateZ */
@@ -127,7 +128,7 @@ header nav .navbar-links ul li a:active {
   position:absolute;
   left:0;
   bottom:0;
-  height: 100vh;
+  height: calc(100vh - var(--header-height) - var(--scroll-bar-height));
 }
 .hotspot a{
   position:absolute;
@@ -138,215 +139,300 @@ header nav .navbar-links ul li a:active {
   transform: scale(1.1);
   transition:all 0.3s ease-in-out;
 }
-.hotspot .scene1-0{
-  bottom:3%;
-  left:3%;
+
+.hotspot .scene1-0{}
+.hotspot .scene2-0{}
+.hotspot .scene2-1{}
+.hotspot .scene2-2{}
+.hotspot .scene3-0{}
+.hotspot .scene3-1{}
+.hotspot .scene3-2{}
+.hotspot .scene3-3{}
+.hotspot .scene4-0{}
+.hotspot .scene4-1{}
+.hotspot .scene4-2{}
+.hotspot .scene4-3{}
+.hotspot .scene4-4{}
+.hotspot .scene4-5{}
+.hotspot .scene5-0{}
+.hotspot .scene5-1{}
+.hotspot .scene5-2{}
+.hotspot .scene5-3{}
+.hotspot .scene5-4{}
+.hotspot .scene5-5{}
+.hotspot .scene6-0{}
+.hotspot .scene6-1{}
+.hotspot .scene6-2{}
+.hotspot .scene6-3{}
+.hotspot .scene6-4{}
+.hotspot .scene6-5{}
+.hotspot .scene6-6{}
+.hotspot .scene7-0{}
+.hotspot .scene7-1{}
+.hotspot .scene7-2{}
+.hotspot .scene8-0{}
+
+
+.hotspot .scene1-0 img {
+  width: auto;
+  height: 25.49vh;
 }
+
+.hotspot .scene2-0 img {
+  width: auto;
+  height: 39.44vh;
+}
+
+.hotspot .scene2-1 img {
+  width: auto;
+  height: 24.51vh;
+}
+
+.hotspot .scene2-2 img {
+  width: auto;
+  height: 13.47vh;
+}
+
+.hotspot .scene3-0 img {
+  width: auto;
+  height: 14.32vh;
+}
+
+.hotspot .scene3-1 img {
+  width: auto;
+  height: 16.75vh;
+}
+
+.hotspot .scene3-2 img {
+  width: auto;
+  height: 20.27vh;
+}
+
+.hotspot .scene3-3 img {
+  width: auto;
+  height: 66.50vh;
+}
+
+.hotspot .scene4-0 img {
+  width: auto;
+  height: 34.47vh;
+}
+
+.hotspot .scene4-1 img {
+  width: auto;
+  height: 49.51vh;
+}
+
+.hotspot .scene4-2 img {
+  width: auto;
+  height: 14.08vh;
+}
+
+.hotspot .scene4-3 img {
+  width: auto;
+  height: 8.50vh;
+}
+
+.hotspot .scene4-4 img {
+  width: auto;
+  height: 9.47vh;
+}
+
+.hotspot .scene4-5 img {
+  width: auto;
+  height: 34.47vh;
+}
+
+.hotspot .scene5-0 img {
+  width: auto;
+  height: 23.18vh;
+}
+
+.hotspot .scene5-1 img {
+  width: auto;
+  height: 27.06vh;
+}
+
+.hotspot .scene5-2 img {
+  width: auto;
+  height: 27.91vh;
+}
+
+.hotspot .scene5-3 img {
+  width: auto;
+  height: 19.42vh;
+}
+
+.hotspot .scene5-4 img {
+  width: auto;
+  height: 27.06vh;
+}
+
+.hotspot .scene5-5 img {
+  width: auto;
+  height: 6.07vh;
+}
+
+.hotspot .scene6-0 img {
+  width: auto;
+  height: 52.43vh;
+}
+
+.hotspot .scene6-1 img {
+  width: auto;
+  height: 15.05vh;
+}
+
+.hotspot .scene6-2 img {
+  width: auto;
+  height: 46.48vh;
+}
+
+.hotspot .scene6-3 img {
+  width: auto;
+  height: 34.47vh;
+}
+
+.hotspot .scene6-4 img {
+  width: auto;
+  height: 9.10vh;
+}
+
+.hotspot .scene6-5 img {
+  width: auto;
+  height: 11.77vh;
+}
+
+.hotspot .scene6-6 img {
+  width: auto;
+  height: 49.51vh;
+}
+
+.hotspot .scene7-0 img {
+  width: auto;
+  height: 46.48vh;
+}
+
+.hotspot .scene7-1 img {
+  width: auto;
+  height: 41.50vh;
+}
+
+.hotspot .scene7-2 img {
+  width: auto;
+  height: 12.50vh;
+}
+
+.hotspot .scene8-0 img {
+  width: auto;
+  height: 50.49vh;
+}
+
+
+
+
 .hotspot .scene1-0 img{
   /* width: 80%; */
   width: auto;
   height: 25vh;
 }
-.hotspot .scene2-0{
-  bottom:18%;
-  left:14.5%;
-}
+
 .hotspot .scene2-0 img{
   /* width: 80%; */
   width: auto;
   height: 39vh;
 }
-.hotspot .scene2-1{
-  bottom:17.5%;
-  left:16%;
-}
+
 .hotspot .scene2-1 img{
   /* width: 80%; */
   width: auto;
   height: 24vh;
 }
-.hotspot .scene2-2{
-  bottom:19%;
-  left:19.1%;
-}
+
 .hotspot .scene2-2 img{
   /* width: 80%; */
   width: auto;
   height: 13vh;
 }
-.hotspot .scene3-0{
-  bottom:42%;
-  left:29.4%;
-}
-.hotspot .scene3-1{
-  bottom:29%;
-  left:29.95%;
-}
-.hotspot .scene3-2{
-  bottom:59%;
-  left:30%;
-}
-.hotspot .scene3-3{
-  bottom:0%;
-  left:33%;
-}
+
 .hotspot .scene3-3 img{
   /* width: 80%; */
   width: auto;
   height: 66vh;
 }
-.hotspot .scene4-0{
-  bottom:15%;
-  left:41.7%;
-}
+
 .hotspot .scene4-0 img{
   /* width: 70%; */
   width: auto;
   height: 34vh;
 }
-.hotspot .scene4-1{
-  bottom:11%;
-  left:44%;
-}
+
 .hotspot .scene4-1 img{
   /* width: 75%; */
   width: auto;
   height: 49vh;
 }
-.hotspot .scene4-2{
-  bottom:45%;
-  left:45%;
-}
-.hotspot .scene4-3{
-  bottom:34.5%;
-  left:45.1%;
-}
+
 .hotspot .scene4-3 img{
   /* width: 70%; */
   width: auto;
   height: 8vh;
 }
-.hotspot .scene4-4{
-  bottom:11%;
-  left:45.2%;
-}
+
 .hotspot .scene4-4 img{
   /* width: 80%; */
   width: auto;
   height: 9vh;
 }
-.hotspot .scene4-5{
-  bottom:14.8%;
-  left:46.2%;
-}
+
 .hotspot .scene4-5 img{
   /* width: 70%; */
   width: auto;
   height: 34vh;
 }
-.hotspot .scene5-0{
-  bottom:37%;
-  left:54.6%; 
-}
-.hotspot .scene5-1{
-  bottom:61%;
-  left:57.8%;
-}
-.hotspot .scene5-2{
-  bottom:36.8%;
-  left:56%;
-}
-.hotspot .scene5-3{
-  bottom:62%;
-  left:56%;
-}
-.hotspot .scene5-4{
-  bottom:61%;
-  left:54%;
-}
-.hotspot .scene5-5{
-  bottom:50%;
-  left:59.2%;
-}
-.hotspot .scene6-0{
-  bottom:13.6%;
-  left:66.2%;
-}
+
 .hotspot .scene6-0 img{
   /* width: 73%; */
   width: auto;
   height: 52vh;
 }
-.hotspot .scene6-1{
-  bottom:8%;
-  left:66%;
-}
-.hotspot .scene6-2{
-  bottom:11%;
-  left:68.3%;
-}
+
 .hotspot .scene6-2 img{
   /* width: 75%; */
   width: auto;
   height: 46vh;
 }
-.hotspot .scene6-3{
-  bottom:14.5%;
-  left:69.9%;
-}
+
 .hotspot .scene6-3 img{
   /* width: 73%; */
   width: auto;
   height: 34vh;
 }
-.hotspot .scene6-4{
-  bottom:7.3%;
-  left:70.3%;
-}
-.hotspot .scene6-5{
-  bottom:7.3%;
-  left:70.7%;
-}
-.hotspot .scene6-6{
-  bottom:10%;
-  left:71.2%;
-}
+
 .hotspot .scene6-6 img{
   /* width: 75%; */
   width: auto;
   height: 49vh;
 }
-.hotspot .scene7-0{
-  bottom:3%;
-  left:77%;
-}
+
 .hotspot .scene7-0 img{
   /* width: 70%; */
   width: auto;
   height: 46vh;
 }
-.hotspot .scene7-1{
-  bottom:15%;
-  left:78.8%;
-}
+
 .hotspot .scene7-1 img{
   /* width: 70%; */
   width: auto;
   height: 41vh;
 }
-.hotspot .scene7-2{
-  bottom:38.38%;
-  left:81.3%;
-}
+
 .hotspot .scene7-2 img{
   /* width: 70%; */
   width: auto;
   height: 12vh;
 }
-.hotspot .scene8-0{
-  bottom:10%;
-  left:91.5%;
-}
+
 .hotspot .scene8-0 img{
   /* width: 75%; */
   width: auto;
